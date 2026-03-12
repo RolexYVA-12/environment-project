@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Pulse | Student Environmental Hub</title>
+    <title>EcoPulse | Parsippany Student Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">EcoPulse</div>
+        <div class="logo">Eco<span>Pulse</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#stats">Impact</a></li>
-            <li><a href="#action">Action</a></li>
+            <li><a href="#stats">The Problem</a></li>
+            <li><a href="#about">Our Mission</a></li>
+            <li><a href="#action">Join Us</a></li>
         </ul>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>The Future is Green.</h1>
-            <p>Join the movement to protect Parsippany's local ecosystems.</p>
-            <button onclick="scrollToAction()" class="btn">Start Today</button>
+            <h1>The Future is <span class="highlight">Green.</span></h1>
+            <p>A student-led initiative to protect local ecosystems in Parsippany-Troy Hills.</p>
+            <button onclick="scrollToAction()" class="btn">Take the First Step</button>
         </div>
     </header>
 
+    <section class="tip-bar">
+        <p id="eco-tip">Loading daily eco-tip...</p>
+    </section>
+
     <section id="stats" class="stats-section">
-        <h2>Environmental Facts</h2>
+        <h2 class="section-title">The Numbers Matter</h2>
         <div class="stats-grid">
             <div class="stat-card">
                 <h3 id="plastic-count">0</h3>
-                <p>Tons of plastic in oceans</p>
+                <p>Metric tons of plastic entering our oceans annually.</p>
             </div>
             <div class="stat-card">
-                <h3>100%</h3>
-                <p>Our commitment</p>
+                <h3>1.5°C</h3>
+                <p>The critical warming threshold we must stay below.</p>
             </div>
         </div>
     </section>
 
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Why I Built This</h2>
+            <p>As students at PTHSD, we see the impact of waste and climate change every day. This platform was designed to bridge the gap between awareness and local action. From Troy Brook to Lake Parsippany, our environment depends on us.</p>
+        </div>
+    </section>
+
     <section id="action" class="action-section">
-        <h2>Take Action</h2>
+        <h2>Join the Movement</h2>
         <div class="form-container">
-            <p>Sign up for local park cleanup alerts:</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your School Email" required>
-                <button type="submit" class="btn">Join Newsletter</button>
+            <form id="contact-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="email" placeholder="School Email" required>
+                <button type="submit" class="btn">Get Local Alerts</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>Built by [Your Name] for Environmental Science Class &copy; 2026</p>
+        <p>Created for the 2026 Hackathon | Built with HTML, CSS, and JS</p>
     </footer>
 
     <script src="script.js"></script>
